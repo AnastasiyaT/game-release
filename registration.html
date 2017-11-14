@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+	<body>
+        <table class="menu">
+            <tr>
+                <th>
+                    <a href="index.html">Главная</a>
+                </th>
+                <th >
+                    <a href="intro.html">Предисловие автора</a>
+                </th>
+                <th>
+                    <a href="manual.html">Инструкция</a>
+                </th>
+                <th>
+                    <a href="registration.html">Регистрация игрока</a>
+                </th>
+            </tr>
+        </table>
+	       <form action="#" method="post"> 
+				    <br>
+				    <br>
+                <fieldset> <!-- рамка -->
+                         <legend> Регистрация </legend> <!-- title -->
+                    <div>
+                        <label for="text"> Логин
+                        </label>
+                                <input id="text" type="text">
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail
+                        </label>
+                                <input id="email" type="email">
+                    </div>
+                    <div>
+                        <label for="pwd">Пароль
+                        </label>
+                                <input id="pwd" type="password">
+                    </div>
+                </fieldset>
+				    <br>
+                <fieldset> 
+                        <legend> Игрок 
+                        </legend> <!-- title -->
+                    <div>
+                        <label for="text"> Придумайте имя 
+                        </label>
+                            <input id="text" type="text">
+                    </div>
+				    <br>
+                    <div>
+                        <label for="textarea">Для комментариев и пожеланий 
+                        </label>
+                                <textarea id="textarea">                            
+                                </textarea>
+                    </div>
+                </fieldset>
+				    <br>
+                 <fieldset>
+                        <legend>Выберита вариант игры
+                        </legend>
+                                <label><input name="sex" type="radio">Один игрок
+                                </label>
+                                <label><input name="sex" type="radio">Несколько игроков
+                </fieldset>
+				    <br>
+                        <fieldset>
+                                <legend>Здесь Вы можете загрузить фото профиля
+                                </legend>
+                    <div>
+                        <label for="imageFile">Фото
+                        </label>
+                                <input id="imageFile" type="file" accept="image/*">
+                    </div>
+                        </fieldset>    
+				    <br>
+				    <br>
+                        <legend>                            
+                        </legend>
+                                <input type="submit" value="Отправить">
+                                <input type="reset" value="Сброс">                               
+            </form>
+
+</body>
+</html>

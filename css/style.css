@@ -1,0 +1,28 @@
+h1 {
+ color: navy;
+ font-size: 200%;
+ font-family: Arial, Verdana, sans-serif;
+ text-align: center;
+}
+
+.image {
+    border-radius: 10px;
+    width:80%;
+    height: 1200px;
+}
+a{
+	text-decoration: none;
+	color: navy;
+} 
+.menu {
+	text-align: center;
+	font-weight: bold;
+    background: #FFFAFA;
+    border: solid 1px white;
+    margin: 0 auto;
+}
+.image2 {   
+    height: 300px;
+    border: solid 1px DarkBlue;
+    display: inline-block;
+}
