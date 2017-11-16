@@ -1,10 +1,10 @@
+@import "grid.css";
 h1 {
  color: navy;
  font-size: 200%;
  font-family: Arial, Verdana, sans-serif;
  text-align: center;
 }
-
 .image {
     border-radius: 10px;
     width:80%;
@@ -22,7 +22,24 @@ a{
     margin: 0 auto;
 }
 .image2 {   
-    height: 300px;
+    height: 500px;
     border: solid 1px DarkBlue;
     display: inline-block;
+}
+
+.tst-col {
+    height: 500px;  
+    color: navy 
+}
+
+.position-static {
+    width: 500px;
+    height: 30px;
+    border: 3px solid #0033FF;
+    margin: 10px;
+    background: #003399;
+    text-align: center;
+}
+.button {
+  background: #003399;  
 }
