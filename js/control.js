@@ -12,12 +12,12 @@
 		link[3]= '4';
 		link[4]= '5';
 		link[5]= '6';
-		links[0]= '`a';
-		links[1]= 'A';
-		links[2]= 'XA';
-		links[3]= 'ША';
-		links[4]= 'СА';
-		links[5]= 'МА';
+		links[0]= '`a=1';
+		links[1]= 'A=2';
+		links[2]= 'XA=3';
+		links[3]= 'ША=4';
+		links[4]= 'СА=5';
+		links[5]= 'МА=6';
 
 firstDice.addEventListener('click', create2Dice);
 	function create2Dice() {	
@@ -32,12 +32,19 @@ firstDice.addEventListener('click', create2Dice);
 			// contentIn2.appendChild(img);
 		// } 		
 	}
+let y;
+
 
 firstDice.addEventListener('click', getNumbDice);
+firstDice.addEventListener('click', getNumbDice2);
+
+
+
+
 // firstDice.removeEventListener('click', getNumbDice);
 	function getNumbDice() {
 		let x;
-		let y;
+		
 		function getRandom(min, max) {
 		 	return x = Math.floor(Math.random() * (max - min + 1)) + min;
 		}		
@@ -47,44 +54,43 @@ firstDice.addEventListener('click', getNumbDice);
 			case 0:
 				divText.innerHTML ='Первый выпавший Вам <b>символ </b>(кубик слева) <b>«'+ links[0]+'»</b>, чтобы получить итоговый символ, наведите курсор мыши на кубик справа и кликните по нему. ';
 				firstDice.src="img/0.gif";
-				return y = '`a';
+				y = '`a =1';
 				break;
 			case 1:
 				divText.innerHTML ='Первый выпавший Вам <b>символ </b>(кубик слева) <b>«'+ links[1]+'»</b>, чтобы получить итоговый символ, наведите курсор мыши на кубик справа и кликните по нему. ';
 				firstDice.src="img/1.gif";
-				return y = 'A';
+				y = 'A=2';
 				break;
 			case 2:
 				divText.innerHTML ='Первый выпавший Вам <b>символ </b>(кубик слева) <b>«'+ links[2]+'»</b>, чтобы получить итоговый символ, наведите курсор мыши на кубик справа и кликните по нему. ';
 				firstDice.src="img/2.gif";
-				return y = 'XA';
+				y = 'XA=3';
 				break;
 			case 3: 
 				divText.innerHTML ='Первый выпавший Вам <b>символ </b>(кубик слева) <b>«'+ links[3]+'»</b>, чтобы получить итоговый символ, наведите курсор мыши на кубик справа и кликните по нему. ';
 				firstDice.src="img/3.gif";
-				return y = 'ША';
+				y = 'ША=4';
 				break;
 			case 4:
 				divText.innerHTML ='Первый выпавший Вам <b>символ </b>(кубик слева) <b>«'+ links[4]+'»</b>, чтобы получить итоговый символ, наведите курсор мыши на кубик справа и кликните по нему. ';
 				firstDice.src="img/4.gif";
-				return y = 'СА';
+				y = 'СА=5';
 				break;
 			default:
 				divText.innerHTML ='Первый выпавший Вам <b>символ </b>(кубик слева) <b>«'+ links[5]+'»</b>, чтобы получить итоговый символ, наведите курсор мыши на кубик справа и кликните по нему. ';
 				firstDice.src="img/5.gif";
-				return y = 'МА';
+				y = 'МА=6';
 				break;
-		}
-		return y;
+		}		
 	}
-//firstDice.removeEventListener('click', getNumbDice);
+// firstDice.removeEventListener('click', getNumbDice);
 
 let secondDice = document.getElementById('img2');
+secondDice.addEventListener('click', getNumbDice);	
 secondDice.addEventListener('click', getNumbDice2);	
 
 	function getNumbDice2() {
-		let x;
-		let y;
+		let x;		
 		function getRandom(min, max) {
 		 	return x = Math.floor(Math.random() * (max - min + 1)) + min;
 		}		
@@ -92,27 +98,27 @@ secondDice.addEventListener('click', getNumbDice2);
 
 		switch(x) {
 			case 0:
-				divText.innerHTML ='Итоговый выпавший символ <b>символ </b>' + y +' <b>«'+ links[0]+'»</b>';
+				divText.innerHTML ='Итоговый выпавший символ <b>«'+ y +'</b> <b>'+ links[0]+'»</b>';
 				secondDice.src="img/0.gif";
 				break;
 			case 1:
-				divText.innerHTML ='Итоговый выпавший символ <b>символ </b>' + y +' <b>«'+ links[1]+'»</b>';
+				divText.innerHTML ='Итоговый выпавший символ <b>«'+ y +'</b> <b>'+ links[1]+'»</b>';
 				secondDice.src="img/1.gif";
 				break;
 			case 2:
-				divText.innerHTML ='Итоговый выпавший символ <b>символ </b>' + y +' <b>«'+ links[2]+'»</b>';
+				divText.innerHTML ='Итоговый выпавший символ <b>«'+ y +'</b> <b>'+ links[2]+'»</b>';
 				secondDice.src="img/2.gif";
 				break;
 			case 3: 
-				divText.innerHTML ='Итоговый выпавший символ <b>символ </b>' + y +' <b>«'+ links[3]+'»</b>';
+				divText.innerHTML ='Итоговый выпавший символ <b>«'+ y +'</b> <b>'+ links[3]+'»</b>';
 				secondDice.src="img/3.gif";
 				break;
 			case 4:
-				divText.innerHTML ='Итоговый выпавший символ <b>символ </b>' + y +' <b>«'+ links[4]+'»</b>';
+				divText.innerHTML ='Итоговый выпавший символ <b>«'+ y +'</b> <b>'+ links[4]+'»</b>';
 				secondDice.src="img/4.gif";
 				break;
 			default:
-				divText.innerHTML ='Итоговый выпавший символ <b>символ </b>' + y +' <b>«'+ links[5]+'»</b>';
+				divText.innerHTML ='Итоговый выпавший символ <b>«'+ y +'</b> <b>'+ links[5]+'»</b>';
 				secondDice.src="img/5.gif";
 				break;
 		}
