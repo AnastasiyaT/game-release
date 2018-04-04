@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Регистрация</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-	<body>
-        <table class="menu">
-            <tr>
-                <th>
-                    <a href="index.html">Главная</a>
-                </th>
-                <th >
-                    <a href="intro.html">Предисловие автора</a>
-                </th>
-                <th>
-                    <a href="manual.html">Инструкция</a>
-                </th>
-                <th>
-                    <a href="registration.html">Регистрация игрока</a>
-                </th>
-            </tr>
-        </table>
+<?php include "header.php";?> 
 	       <form action="#" method="post"> 
 				    <br>
 				    <br>

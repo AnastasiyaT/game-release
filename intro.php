@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
-	<head> 
-		<meta charset="utf-8">
-		<title> Index </title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
-	<body>
-	<div class="menu">
-			<ul>
-				<li><div class="nav"><a href="index.html">Начало</a></div> </li>
-				<li><div class="nav"><a href="intro.html">Предисловие</a></div> </li>
-				<li><div class="nav"><a href="manual.html">Как играть</a></div> </li>
-				<li><div class="nav"><a href="game.html">Игра</a></div> </li>				
-			</ul>
-		</div>		
+<?php include "header.php";?> 		
 			<img class="image2" src="img/cnn.jpg" alt="фотография">
 				<p class="text">Игра «Освобождение» была создана на основе представлений буддийской космологии Чогьялом Намкаем Норбу, заслуженным профессором Восточного Университета Неаполя и мастером тибетской традиции Дзогчен. В эту игру играют на большом цветном поле — мандале, где каждая позиция символизирует одно из измерений бытия. Цель игры — достичь Освобождения от сансары и обрести измерение Дхармакайи, состояние окончательного Просветления.<br><br>
 				Данное руководство  основано на тексте Чогьяла Намкая Норбу SRID PA`I` KHOR LO GROL ТHSHUL BZHUGS 
