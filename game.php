@@ -19,9 +19,20 @@
  // $row = mysql_fetch_array($result);
  // echo $row['name'];
 
-
+ // $sql = mysql_query("SELECT `ID`, `Name` FROM `level`");
+ //    while ($result = mysql_fetch_array($sql)) {
+ //        echo $result['Name'].": ".$result['id']." рублей<br>";
+ //    }
 
 //mysql_close();
+
+ $mysqli = @new mysqli('localhost', 'root', '', 'my_game'); 
+$result_set = $mysqli->query('SELECT id, name, description FROM my_game'); 
+while ($row = $result_set->fetch_assoc()) { 
+$row['id'] .
+$row['name']. 
+$row['description'];
+}
 
  ?>   
 
